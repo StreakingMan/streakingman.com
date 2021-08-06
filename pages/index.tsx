@@ -19,37 +19,37 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-          Get started by editing{" "}
-          <code className={styles.code}>pages/index.js</code>
+          正在经历社会毒打的前端工程师 ，技术战：
+          <code className={styles.code}>[vue,react,node,...other]</code>
         </p>
 
         <div className={styles.grid}>
-          <a href="https://github.com/StreakingMan" className={styles.card} target="_blank" rel="noreferrer">
+          <a
+            href="https://github.com/StreakingMan"
+            className={styles.card}
+            target="_blank"
+            rel="noreferrer"
+          >
             <h2>GitHub &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
+            <p>热爱开源社区，期待有一天能有很多很多的star...</p>
           </a>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
+          <a href="https://blog.streakingman.com" className={styles.card}>
+            <h2>博客 &rarr;</h2>
+            <p>沉淀知识，随笔总结，记录各种炫酷和花里胡哨的东西。</p>
           </a>
 
           <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            href="https://resume-editor.streakingman.com"
             className={styles.card}
           >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
+            <h2>vue3简历编辑器 &rarr;</h2>
+            <p>轻松制作一份精美简历！</p>
+          </a>
+
+          <a className={styles.card}>
+            <h2>敬请期待 &rarr;</h2>
+            <p>正在搞一些花里胡哨的东西...</p>
           </a>
         </div>
       </main>

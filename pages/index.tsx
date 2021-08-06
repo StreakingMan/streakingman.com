@@ -19,7 +19,7 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-          正在经历社会毒打的前端工程师 ，技术战：
+          正在经历社会毒打的前端工程师 ，技术栈：
           <code className={styles.code}>[vue,react,node,...other]</code>
         </p>
 

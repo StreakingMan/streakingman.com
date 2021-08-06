@@ -34,7 +34,12 @@ export default function Home() {
             <p>热爱开源社区，期待有一天能有很多很多的star...</p>
           </a>
 
-          <a href="https://blog.streakingman.com" className={styles.card}>
+          <a
+            href="https://blog.streakingman.com"
+            className={styles.card}
+            target="_blank"
+            rel="noreferrer"
+          >
             <h2>博客 &rarr;</h2>
             <p>沉淀知识，随笔总结，记录各种炫酷和花里胡哨的东西。</p>
           </a>
@@ -42,6 +47,8 @@ export default function Home() {
           <a
             href="https://resume-editor.streakingman.com"
             className={styles.card}
+            target="_blank"
+            rel="noreferrer"
           >
             <h2>vue3简历编辑器 &rarr;</h2>
             <p>轻松制作一份精美简历！</p>

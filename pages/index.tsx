@@ -28,7 +28,7 @@ export default function Home() {
             href="https://github.com/StreakingMan"
             className={styles.card}
             target="_blank"
-            rel="noreferrer"
+            rel="noreferrer nofollow"
           >
             <h2>GitHub &rarr;</h2>
             <p>热爱开源社区，期待有一天能有很多很多的star...</p>
@@ -65,7 +65,7 @@ export default function Home() {
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
-          rel="noopener noreferrer"
+          rel="noopener noreferrer nofollow"
         >
           Powered by{" "}
           <span className={styles.logo}>

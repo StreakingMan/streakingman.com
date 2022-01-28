@@ -8,6 +8,6 @@ function MyApp({ Component, pageProps }: AppProps) {
 }
 
 
-MyApp.getInitialProps = ()=>{}
+MyApp.getInitialProps = () => ({});
 
 export default MyApp;

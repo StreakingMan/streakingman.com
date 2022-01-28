@@ -51,6 +51,9 @@ export default function Home() {
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>
         </a>
+        <a href="https://beian.miit.gov.cn/" target="_blank" rel="noreferrer">
+          浙ICP备17007857号-2
+        </a>
       </footer>
     </div>
   );

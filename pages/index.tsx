@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.scss";
-import { sites } from "./config/sites";
+import { sites } from "../config/sites";
 
 export default function Home() {
   return (

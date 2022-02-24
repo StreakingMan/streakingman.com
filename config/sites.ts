@@ -16,9 +16,14 @@ export const sites: site[] = [
     url: "https://blog.streakingman.com",
   },
   {
-    title: "vue3简历编辑器",
+    title: "Vue3简历编辑器",
     desc: "轻松制作一份精美简历！",
     url: "https://resume-editor.streakingman.com",
+  },
+  {
+    title: "Streakingman Cli",
+    desc: "封装了一些常用操作的命令行工具",
+    url: "https://github.com/StreakingMan/streakingman-cli",
   },
   {
     title: "敬请期待",

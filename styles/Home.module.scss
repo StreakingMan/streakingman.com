@@ -1,3 +1,18 @@
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  10% {
+    transform: translateY(-50%);
+  }
+  20% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .container {
   padding: 0 0.5rem;
   display: flex;
@@ -37,7 +52,11 @@
   line-height: 1.15;
   font-size: 4rem;
 
-  a {
+  * {
+    transition: 0.3s;
+  }
+
+  .highlight {
     color: #0070f3;
     text-decoration: none;
     &:hover,
@@ -45,6 +64,14 @@
     &:active {
       text-decoration: underline;
     }
+  }
+
+  .jump {
+    display: inline-block;
+    animation-name: jump;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-play-state: running;
   }
 }
 
@@ -69,7 +96,7 @@
 
 .grid {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: start;
   flex-wrap: wrap;
   max-width: 800px;
@@ -111,10 +138,11 @@
   margin-left: 0.5rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 680px) {
   .grid {
     width: 100%;
     flex-direction: column;
+    align-items: center;
   }
   .card {
     width: 80%;

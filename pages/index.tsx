@@ -1,9 +1,15 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.scss";
-import { sites } from "../config/sites";
+import config from "../config";
 
 export default function Home() {
+  const {
+    sites,
+    title: { normal, highlight },
+    desc,
+    publishNum,
+  } = config;
   return (
     <div className={styles.container}>
       <Head>
@@ -16,11 +22,21 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Streaking <a>Man!</a>
+          {(normal + highlight).split("").map((str, i) => (
+            <a
+              className={`${i >= normal.length ? styles.highlight : ""} ${
+                styles.jump
+              }`}
+              style={{ animationDelay: i * 0.1 + "s" }}
+              key={`${i}`}
+            >
+              {str}
+            </a>
+          ))}
         </h1>
 
         <p className={styles.description}>
-          正在经历社会毒打的前端工程师 ，技术栈：
+          正在经历社会毒打的前端工程师，技术栈：
           <code className={styles.code}>[vue,react,node,...other]</code>
         </p>
 
@@ -56,7 +72,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer nofollow"
         >
-          浙ICP备17007857号-2
+          {publishNum}
         </a>
       </footer>
     </div>

@@ -27,7 +27,7 @@ export default function Home() {
               className={`${i >= normal.length ? styles.highlight : ""} ${
                 styles.jump
               }`}
-              style={{ animationDelay: i * 0.1 + "s" }}
+              style={{ animationDelay: i / 10 + "s" }}
               key={`${i}`}
             >
               {str}

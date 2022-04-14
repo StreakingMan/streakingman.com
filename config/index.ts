@@ -40,6 +40,11 @@ const config: Config = {
       url: "https://github.com/StreakingMan/streakingman-cli",
     },
     {
+      title: "Todo List",
+      desc: "一个简单的todo-list应用",
+      url: "https://todo.streakingman.com",
+    },
+    {
       title: "敬请期待",
       desc: "正在搞一些花里胡哨的东西...",
       url: "",

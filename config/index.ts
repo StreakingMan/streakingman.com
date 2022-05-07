@@ -45,6 +45,11 @@ const config: Config = {
       url: "https://todo.streakingman.com",
     },
     {
+      title: "React Simple Mind",
+      desc: "轻量配置化思维导图组件",
+      url: "https://github.com/StreakingMan/react-simple-mind",
+    },
+    {
       title: "敬请期待",
       desc: "正在搞一些花里胡哨的东西...",
       url: "",

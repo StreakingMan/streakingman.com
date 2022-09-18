@@ -30,7 +30,7 @@ const config: Config = {
       url: "https://blog.streakingman.com",
     },
     {
-      title: "能有解出来的羊了个羊Demo",
+      title: "能解出来的羊了个羊Demo",
       desc: "坑爹游戏治好了我的低血压，自己用React撸了个能够通关的。",
       url: "https://github.com/StreakingMan/solvable-sheep-game",
     },

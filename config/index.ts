@@ -9,7 +9,6 @@ interface Config {
     desc: string;
     url: string;
   }>
-  publishNum: string
 }
 
 const config: Config = {
@@ -60,7 +59,6 @@ const config: Config = {
       url: "",
     },
   ],
-  publishNum: '浙ICP备17007857号-2'
 };
 
 export default config;

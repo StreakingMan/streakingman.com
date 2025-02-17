@@ -7,8 +7,6 @@ export default function Home() {
   const {
     sites,
     title: { normal, highlight },
-    desc,
-    publishNum,
   } = config;
   return (
     <div className={styles.container}>
@@ -66,13 +64,6 @@ export default function Home() {
           <span className={styles.logo}>
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>
-        </a>
-        <a
-          href="https://beian.miit.gov.cn/"
-          target="_blank"
-          rel="noopener noreferrer nofollow"
-        >
-          {publishNum}
         </a>
       </footer>
     </div>

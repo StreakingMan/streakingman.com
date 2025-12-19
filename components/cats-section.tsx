@@ -19,7 +19,7 @@ const cats: CatPhoto[] = [
   {
     name: "哦多茄",
     image1: "/cats/odoja-1.jpg",
-    image2: "/cats/odaja-2.jpg",
+    image2: "/cats/odoja-2.jpg",
   },
 ];
 
@@ -71,7 +71,9 @@ export function CatsSection() {
         <div className="absolute left-10 top-20 text-4xl opacity-5">🐾</div>
         <div className="absolute right-20 top-40 text-3xl opacity-5">🐾</div>
         <div className="absolute bottom-20 left-1/4 text-5xl opacity-5">🐾</div>
-        <div className="absolute bottom-40 right-1/3 text-4xl opacity-5">🐾</div>
+        <div className="absolute bottom-40 right-1/3 text-4xl opacity-5">
+          🐾
+        </div>
       </div>
 
       <div className="container mx-auto px-4">

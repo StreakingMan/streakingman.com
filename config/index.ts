@@ -1,14 +1,16 @@
+import { Project } from "@/components/project-card";
+
 interface Config {
   title: {
     normal: string;
     highlight: string;
-  }
-  desc: string
-  sites: Array<{
-    title: string;
-    desc: string;
-    url: string;
-  }>
+  };
+  slogan: string;
+  projects: Project[];
+  social: {
+    github: string;
+    blog: string;
+  };
 }
 
 const config: Config = {
@@ -16,49 +18,63 @@ const config: Config = {
     normal: "Streaking",
     highlight: "Man!",
   },
-  desc: '',
-  sites: [
+  slogan:
+    "AI 时代 100x Engineer / 顶流应用想法专家 / 3D打印炒面师 / 独立游戏文件夹开发者 / 雕猫 & 哦多茄 铲屎官",
+  projects: [
     {
-      title: "GitHub",
-      desc: "热爱开源社区，期待有一天能有很多很多的star...",
-      url: "https://github.com/StreakingMan",
-    },
-    {
-      title: "博客",
-      desc: "沉淀知识，随笔总结，记录各种炫酷和花里胡哨的东西。",
-      url: "https://blog.streakingman.com",
-    },
-    {
-      title: "能解出来的羊了个羊Demo",
-      desc: "坑爹游戏治好了我的低血压，自己用React撸了个能够通关的。",
+      name: "solvable-sheep-game",
+      description:
+        "能够解出来的「羊了个羊」小游戏 demo，React 实现，支持自定义主题",
       url: "https://github.com/StreakingMan/solvable-sheep-game",
+      stars: 403,
+      tech: ["React", "TypeScript", "Vite"],
     },
     {
-      title: "Vue3简历编辑器",
-      desc: "轻松制作一份精美简历！",
-      url: "https://resume-editor.streakingman.com",
+      name: "vue3-resume-editor",
+      description: "Vue3 在线简历编辑器，轻松制作一份精美简历",
+      url: "https://github.com/StreakingMan/vue3-resume-editor",
+      stars: 46,
+      tech: ["Vue3", "TypeScript"],
     },
     {
-      title: "Streakingman Cli",
-      desc: "封装了一些常用操作的命令行工具",
-      url: "https://github.com/StreakingMan/streakingman-cli",
+      name: "vitepress-blogmate",
+      description:
+        "集成 VitePress 强大功能的博客主题和编辑器工具集，支持标签、分类、图片管理",
+      url: "https://github.com/StreakingMan/vitepress-blogmate",
+      stars: 7,
+      tech: ["Vue", "VitePress"],
     },
     {
-      title: "Todo List",
-      desc: "一个简单的todo-list应用",
-      url: "https://todo.streakingman.com",
+      name: "streakingman.github.io",
+      description: "个人技术博客，沉淀知识，随笔总结，记录各种炫酷的东西",
+      url: "https://blog.streakingman.com",
+      stars: 5,
+      tech: ["Jekyll", "HTML"],
     },
     {
-      title: "React Simple Mind",
-      desc: "轻量配置化思维导图组件",
-      url: "https://github.com/StreakingMan/react-simple-mind",
+      name: "naraka-2d",
+      description: "永劫无间横版格斗游戏，独立游戏开发尝试",
+      url: "https://github.com/StreakingMan/naraka-2d",
+      stars: 4,
+      tech: ["TypeScript", "Canvas"],
     },
     {
-      title: "敬请期待",
-      desc: "正在搞一些花里胡哨的东西...",
-      url: "",
+      name: "homebooks",
+      description: "书墙项目，个人藏书管理系统",
+      url: "https://github.com/StreakingMan/homebooks",
+      tech: ["Vue", "Nuxt"],
+    },
+    {
+      name: "texas-holdem",
+      description: "德州扑克交互式模拟教学演示",
+      url: "https://github.com/StreakingMan/texas-holdem",
+      tech: ["Vue", "Canvas"],
     },
   ],
+  social: {
+    github: "https://github.com/StreakingMan",
+    blog: "https://blog.streakingman.com",
+  },
 };
 
 export default config;

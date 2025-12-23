@@ -81,7 +81,7 @@ export function ProjectsSection() {
   return (
     <section className="relative py-20">
       <div className="container mx-auto px-4">
-<SectionTitle title="我的项目" />
+        <SectionTitle title="开源项目" />
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {config.projects.map((project, index) => (
@@ -92,4 +92,3 @@ export function ProjectsSection() {
     </section>
   );
 }
-

@@ -1,5 +1,10 @@
 import { Project } from "@/components/project-card";
 
+export interface LivePreviewProject {
+  name: string;
+  url: string;
+}
+
 interface Config {
   title: {
     normal: string;
@@ -7,6 +12,7 @@ interface Config {
   };
   slogan: string;
   projects: Project[];
+  livePreviewProjects: LivePreviewProject[];
   social: {
     github: string;
     blog: string;
@@ -69,6 +75,24 @@ const config: Config = {
       description: "德州扑克交互式模拟教学演示",
       url: "https://github.com/StreakingMan/texas-holdem",
       tech: ["Vue", "Canvas"],
+    },
+  ],
+  livePreviewProjects: [
+    {
+      name: "德州扑克教学",
+      url: "https://texas.streakingman.com",
+    },
+    {
+      name: "在线简历编辑器",
+      url: "https://resume-editor.streakingman.com",
+    },
+    {
+      name: "Todo 应用",
+      url: "https://todo.streakingman.com",
+    },
+    {
+      name: "个人博客",
+      url: "https://blog.streakingman.com",
     },
   ],
   social: {

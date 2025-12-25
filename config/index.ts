@@ -79,6 +79,10 @@ const config: Config = {
   ],
   livePreviewProjects: [
     {
+      name: "羊了个羊",
+      url: "https://solvable-sheep-game.streakingman.com",
+    },
+    {
       name: "德州扑克教学",
       url: "https://texas.streakingman.com",
     },
